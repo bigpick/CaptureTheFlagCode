@@ -7,3 +7,17 @@ Find it.
 (Your code from #3 should help.)
 
 
+# Solve
+
+```
+./chall4.py challenge4_text.txt
+Now that the party is jumping
+
+Th!UVguemtv+Iev|SljN&|yeI_Etv
+tHuvGUEMTV
+          iEV\sLJn\Y#EieTV
+Ea NEy2HcAoF2UmCUxe%s)Sv69KQL
+Ey0DGvdt|eg:XtgmB}{_7mhtXNTeg
+...
+```
+We can see that the first (most likely) result seems to indeed be the answer.
