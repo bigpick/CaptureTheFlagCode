@@ -1,7 +1,5 @@
 #!/usr/bin/env python3.8
 
-#!/usr/bin/env python3.8
-
 import argparse
 from codecs import encode, decode
 from typing import List
