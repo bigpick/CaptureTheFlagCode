@@ -1,6 +1,6 @@
 # [Detect AES in ECB mode](https://cryptopals.com/sets/1/challenges/8)
 
-[In this file](In this file) are a bunch of hex-encoded ciphertexts.
+[In this file](https://cryptopals.com/static/challenge-data/8.txt) are a bunch of hex-encoded ciphertexts.
 
 **One of them has been encrypted with ECB**.
 
