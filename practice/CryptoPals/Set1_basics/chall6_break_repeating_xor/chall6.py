@@ -33,8 +33,8 @@ def find_hamming_distance(string1: bytes, string2: bytes) -> int:
     :returns: The hamming distance between the two params as an int
     """
     distance = 0
-    for bit1, bit2 in zip(string1, string2):
-        diff = bit1 ^ bit2
+    for byte1, byte2 in zip(string1, string2):
+        diff = byte1 ^ byte2
         # XOR only returns 1 if bits are different
         distance += sum([1 for bit in bin(diff) if bit == '1'])
     return distance
