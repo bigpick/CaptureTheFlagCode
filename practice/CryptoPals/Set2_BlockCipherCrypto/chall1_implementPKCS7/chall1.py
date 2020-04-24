@@ -4,6 +4,9 @@ import argparse
 from codecs import encode, decode
 from typing import Tuple
 
+from Crypto.Util.Padding import pad
+from Crypto.Cipher import AES
+
 
 def parse_cmdline_args() -> Tuple[str, int]:
     parser = argparse.ArgumentParser(description='Process command line args.')
@@ -32,6 +35,9 @@ def main():
     padded = pkcs7_pad(to_be_padded, block_size)
     print(repr(padded))
 
+    pycryptodome_padded = pad(to_be_padded.encode(), block_size)
+    print(pycryptodome_padded)
+    assert(padded == pycryptodome_padded.decode())
 
 if __name__=='__main__':
     main()
