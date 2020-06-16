@@ -109,6 +109,15 @@ Also, a listing of some of the tools and resources I've found especially useful.
    * Usage: `python3.8 pwntoolsRemoteXorBrute.py --key_prefix <flag{> --endpoint some.host.here --port 6969`
      * Brute forces one char at a time against a remote endpoint that is a service that takes input and just returns the input XOR'ed against the static key. Easy to crack as just send a char until you get nothing back, append to key_so_far, and then proceed to next.
 * [hashcat](https://hashcat.net/hashcat/) -- Awesome password cracking/recovery.
+  * For wordlists/dictionaries, see the [SecList](./tools/crypto/SecLists/Passwords) repo.
+     * In **rough** order of first to-try vs last to try (totally subjective):
+         1. `tools/crypto/SecLists/Passwords/Leaked-Databases/rockyou-25.txt`.
+         2. `tools/crypto/SecLists/Passwords/Leaked-Databases/rockyou-60.txt`.
+         3. `tools/crypto/SecLists/Passwords/Common-Credentials/10-million-password-list-top-1000.txt`.
+         4. `tools/crypto/SecLists/Passwords/Common-Credentials/10-million-password-list-top-1000.txt`.
+         5. `tools/crypto/SecLists/Passwords/Leaked-Databases/rockyou-withcount.txt.tar.gz` (after unzipping).
+  * For CTF specific wrapping rule list example: see [example writeup for flag wrapper rule list](https://bigpick.github.io/TodayILearned/articles/2020-06/castorsCTF-writeups#password-crack-3).
+  * **Big boy** rule list: see [OneRuleToRuleThemAll](./tools/crypto/OneRuleToRuleThemAll.rule)
 * [johntheripper](https://www.openwall.com/john/) -- Another awesome password cracking tool -- has additional tools to parse files and extract password hashes in particular format for cracking
    * E.g. `zip2john`, `keepass2john`, etc...
    * Once pulled out with `...2john`, can be fed to either `haschat` or `john`.
