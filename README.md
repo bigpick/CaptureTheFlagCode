@@ -105,6 +105,9 @@ Also, a listing of some of the tools and resources I've found especially useful.
     ```
 * [Simple RSA Java Template](./tools/crypto/SimpleJavaRsaTemplate.java) -- Stub in your factored `p` and `q` and remaining values and then compile with `javac` and run with `java`.
 * [RSA Java Multi-prime template](./tools/crypto/MultiPrimeJavaRsaTemplate.java) -- Stub in your factored primes and remaining values and then compile with `javac` and run with `java`.
+* [Simple XOR server with predictable key brute forcer](./tools/crypto/pwntoolsRemoteXorBrute.py)
+   * Usage: `python3.8 pwntoolsRemoteXorBrute.py --key_prefix <flag{> --endpoint some.host.here --port 6969`
+     * Brute forces one char at a time against a remote endpoint that is a service that takes input and just returns the input XOR'ed against the static key. Easy to crack as just send a char until you get nothing back, append to key_so_far, and then proceed to next.
 * [hashcat](https://hashcat.net/hashcat/) -- Awesome password cracking/recovery.
 * [johntheripper](https://www.openwall.com/john/) -- Another awesome password cracking tool -- has additional tools to parse files and extract password hashes in particular format for cracking
    * E.g. `zip2john`, `keepass2john`, etc...
