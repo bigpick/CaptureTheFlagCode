@@ -130,7 +130,8 @@ Also, a listing of some of the tools and resources I've found especially useful.
       * [hashcat attack mode type cheatsheet (2)](https://hashcat.net/wiki/doku.php?id=example_hashes)
       * [john attack mode type cheatsheet](http://pentestmonkey.net/cheat-sheet/john-the-ripper-hash-formats)
   * [Running hashcat on Google Colab GPUs](https://github.com/someshkar/colabcat) -- 1. Free GPUs; 2. hashcat; 3. Profit?
-
+  * [01248 password](https://ctf-wiki.github.io/ctf-wiki/crypto/classical/others/#01248-password) cipher solver: [here](./tools/crypto/01248_password.py).
+  * [Jefferson wheel disk](https://ctf-wiki.github.io/ctf-wiki/crypto/classical/others/#01248-password) cipher solver: example [here](./tools/crypto/jeffersonWheelCipher/jefferson_wheel_cipher_solve.py).
 
 
 ---
