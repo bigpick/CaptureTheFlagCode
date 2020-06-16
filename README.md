@@ -69,16 +69,16 @@ Also, a listing of some of the tools and resources I've found especially useful.
 ### Local Applications
 * [CyberChef (docker container)](https://hub.docker.com/r/remnux/cyberchef/)
 
-```
-docker pull remnux/cyberchef
-sudo docker run -d -p 8080:8080 remnux/cyberchef
-# docker ps | grep cyberchef then docker stop/rm
-```
+    ```
+    docker pull remnux/cyberchef
+    sudo docker run -d -p 8080:8080 remnux/cyberchef
+    # docker ps | grep cyberchef then docker stop/rm
+    ```
 
 * [xortool](./tools/xortool) -- brute force XOR against strings or documents.
 * [RsaCtfTool](./tools/RsaCtfTool) -- _Lots_ of options for RSA things.
 * [jwt_tool](./tools/jwt_tool) -- Interactive tool for forging and fiddling with JWT tokens.
-  * Another option for JWT fiddlingin python - [PyJWT](https://pypi.org/project/PyJWT/1.4.0/) - install via pip:
+  * Another option for JWT fiddlingin python - [PyJWT](https://pypi.org/project/PyJWT/1.4.0/) - install via pip.
 * [FactorDB python library](https://pypi.org/project/factordb-pycli/) -- Same as online factorDB, but from Python!
 
     ```python
