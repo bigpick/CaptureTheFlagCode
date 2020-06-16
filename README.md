@@ -3,7 +3,10 @@ Also, a listing of some of the tools and resources I've found especially useful.
 
 **[See this page for nice list of tool binaries](https://github.com/zardus/ctf-tools)**.
 
- * It's [Docker instructions...](https://github.com/zardus/ctf-tools#docker-version-17):
+ * It's [Docker instructions...](https://github.com/zardus/ctf-tools#docker-version-17)
+
+    <details><summary>Show</summary>
+    <br>
 
     ```bash
     git clone https://github.com/zardus/ctf-tools
@@ -56,6 +59,8 @@ Also, a listing of some of the tools and resources I've found especially useful.
     # search for a tool
     manage-tools search preload
     ```
+
+    </details>
 
 # Crypto
 ### Online
