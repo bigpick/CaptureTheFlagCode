@@ -57,16 +57,16 @@ Also, a listing of some of the tools and resources I've found especially useful.
     manage-tools search preload
     ```
 
-# Online
-## Crypto
+# Crypto
+### Online
 * [CyberChef](https://gchq.github.io/CyberChef/) -- "The Cyber Swiss Army Knife", analysing and decoding data
 * [ROT5, ROT13, ROT18, and ROT47 cipher re/unshift](https://www.qqxiuzi.cn/bianma/ROT5-13-18-47.php)
 * [QuipQuip](https://quipqiup.com/) -- Automated substitution/vigenere cipher solver w/out key.
 * [Automated cipher identifier attempt](https://www.boxentriq.com/code-breaking/cipher-identifier).
 * [Walkthrough of cryptanalysis methods](http://practicalcryptography.com/cryptanalysis/).
+* [FactorDB](http://factordb.com/) -- Pretty much handles/factors any entry level RSA problem.
 
-# Local Applications
-## Crypto
+### Local Applications
 * [CyberChef (docker container)](https://hub.docker.com/r/remnux/cyberchef/)
 
 ```
@@ -75,8 +75,27 @@ sudo docker run -d -p 8080:8080 remnux/cyberchef
 # docker ps | grep cyberchef then docker stop/rm
 ```
 
+* [xortool](./tools/xortool) -- brute force XOR against strings or documents.
+* [RsaCtfTool](./tools/RsaCtfTool) -- _Lots_ of options for RSA things.
+* [jwt_tool](./tools/jwt_tool) -- Interactive tool for forging and fiddling with JWT tokens.
+  * Another option for JWT fiddlingin python - [PyJWT](https://pypi.org/project/PyJWT/1.4.0/) - install via pip:
+* [FactorDB python library](https://pypi.org/project/factordb-pycli/) -- Same as online factorDB, but from Python!
+
+    ```python
+    from factordb.factordb import FactorDB
+
+    def check_factordb(N):
+      factorized = FactorDB(N)
+      factorized.connect()
+      factor_list = factorized.get_factor_list()
+      print(factor_list)
+      return factor_list
+
+    p, q = check_factordb(N)
+    ```
+
 ---
 
 # Forensics
-## Online
+### Online
 * [DTMF decoder](http://dialabc.com/sound/detect/) -- takes audio file as input and gives numbers from DTMF.
