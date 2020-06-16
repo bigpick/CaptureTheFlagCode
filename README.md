@@ -117,8 +117,12 @@ Also, a listing of some of the tools and resources I've found especially useful.
          4. `tools/crypto/SecLists/Passwords/Common-Credentials/10-million-password-list-top-1000.txt`.
          5. `tools/crypto/SecLists/Passwords/Leaked-Databases/rockyou-withcount.txt.tar.gz` (after unzipping).
   * For CTF specific wrapping rule list example: see [example writeup for flag wrapper rule list](https://bigpick.github.io/TodayILearned/articles/2020-06/castorsCTF-writeups#password-crack-3).
-  * [Hob0Rules]()
+  * [Hob0Rules](./tools/crypto/cracking/rules/Hob0Rules) rule set.
+     * First: `-r ./tools/crypto/cracking/rules/Hob0Rules/hob064.rule`.
+     * Second (more last resort): `-r ./tools/crypto/cracking/rules/Hob0Rules/d3adhob0.rule`.
   * **Big boy** rule list, for when you really are lost: see [OneRuleToRuleThemAll.rule](./tools/crypto/cracking/rules/OneRuleToRuleThemAll.rule).
+     * `-r ./tools/crypto/cracking/rules/OneRuleToRuleThemAll.rule`
+
 * [johntheripper](https://www.openwall.com/john/) -- Another awesome password cracking tool -- has additional tools to parse files and extract password hashes in particular format for cracking
    * E.g. `zip2john`, `keepass2john`, etc...
    * Once pulled out with `...2john`, can be fed to either `haschat` or `john`.
