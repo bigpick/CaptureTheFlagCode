@@ -74,7 +74,7 @@ Also, a listing of some of the tools and resources I've found especially useful.
 * [Vigenere Solver (auto)](https://www.guballa.de/vigenere-solver) -- Automated vigenere key cracker.
 * [Substition Solver (auto)](https://www.guballa.de/substitution-solver) -- Automated substitution cipher cracker.
 * [Rumkin Cryptogram Solver](http://rumkin.com/tools/cipher/cryptogram-solver.php) -- quipquip cryptogram alternative.
-* [Hash type identifier (MD4 vs MD5 vs SHA256 vs etc...](https://www.tunnelsup.com/hash-analyzer/) -- good for identifying password hash types for feeding to haschat/john.
+* [Hash type identifier (MD4 vs MD5 vs SHA256 vs etc...)](https://www.tunnelsup.com/hash-analyzer/) -- good for identifying password hash types for feeding to haschat/john.
 
 ### Local Applications
 * [CyberChef (docker container)](https://hub.docker.com/r/remnux/cyberchef/)
