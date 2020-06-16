@@ -103,6 +103,18 @@ Also, a listing of some of the tools and resources I've found especially useful.
 
     p, q = check_factordb(N)
     ```
+* [Simple RSA Java Template](./tools/crypto/SimpleJavaRsaTemplate.java) -- Stub in your factored `p` and `q` and remaining values and then compile with `javac` and run with `java`.
+* [RSA Java Multi-prime template](./tools/crypto/MultiPrimeJavaRsaTemplate.java) -- Stub in your factored primes and remaining values and then compile with `javac` and run with `java`.
+* [hashcat](https://hashcat.net/hashcat/) -- Awesome password cracking/recovery.
+* [johntheripper](https://www.openwall.com/john/) -- Another awesome password cracking tool -- has additional tools to parse files and extract password hashes in particular format for cracking
+   * E.g. `zip2john`, `keepass2john`, etc...
+   * Once pulled out with `...2john`, can be fed to either `haschat` or `john`.
+      * [hashcat attack mode type cheatsheet (1)](https://github.com/frizb/Hashcat-Cheatsheet)
+      * [hashcat attack mode type cheatsheet (2)](https://hashcat.net/wiki/doku.php?id=example_hashes)
+      * [john attack mode type cheatsheet](http://pentestmonkey.net/cheat-sheet/john-the-ripper-hash-formats)
+  * [Running hashcat on Google Colab GPUs](https://github.com/someshkar/colabcat) -- 1. Free GPUs; 2. hashcat; 3. Profit?
+
+
 
 ---
 
