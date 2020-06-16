@@ -64,12 +64,17 @@ Also, a listing of some of the tools and resources I've found especially useful.
 
 # Crypto
 ### Online
-* [CyberChef](https://gchq.github.io/CyberChef/) -- "The Cyber Swiss Army Knife", analysing and decoding data
-* [ROT5, ROT13, ROT18, and ROT47 cipher re/unshift](https://www.qqxiuzi.cn/bianma/ROT5-13-18-47.php)
+* [CyberChef](https://gchq.github.io/CyberChef/) -- "The Cyber Swiss Army Knife", analysing and decoding data.
+* [ROT5, ROT13, ROT18, and ROT47 cipher re/unshift](https://www.qqxiuzi.cn/bianma/ROT5-13-18-47.php).
 * [QuipQuip](https://quipqiup.com/) -- Automated substitution/vigenere cipher solver w/out key.
 * [Automated cipher identifier attempt](https://www.boxentriq.com/code-breaking/cipher-identifier).
 * [Walkthrough of cryptanalysis methods](http://practicalcryptography.com/cryptanalysis/).
 * [FactorDB](http://factordb.com/) -- Pretty much handles/factors any entry level RSA problem.
+* [WolframAlpha Factorizer](https://www.wolframalpha.com/input/?i=factorize) -- Not as great as FactorDB, but will sometimes handle/factor entry level RSA problems.
+* [Vigenere Solver (auto)](https://www.guballa.de/vigenere-solver) -- Automated vigenere key cracker.
+* [Substition Solver (auto)](https://www.guballa.de/substitution-solver) -- Automated substitution cipher cracker.
+* [Rumkin Cryptogram Solver](http://rumkin.com/tools/cipher/cryptogram-solver.php) -- quipquip cryptogram alternative.
+* [Hash type identifier (MD4 vs MD5 vs SHA256 vs etc...](https://www.tunnelsup.com/hash-analyzer/) -- good for identifying password hash types for feeding to haschat/john.
 
 ### Local Applications
 * [CyberChef (docker container)](https://hub.docker.com/r/remnux/cyberchef/)
