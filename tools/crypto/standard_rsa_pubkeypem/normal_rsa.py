@@ -46,6 +46,10 @@ def main():
     d = a
     print("d:  " + str(d) );
 
+    # Decrypt
+    pt = pow(ct, d, N)
+    print("Plaintext: ", pt)
+
 
 if __name__=='__main__':
     main()
