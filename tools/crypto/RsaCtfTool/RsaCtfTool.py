@@ -252,8 +252,11 @@ if __name__ == "__main__":
     found = False
     attackobj = RSAAttack(args)
 
-    if len(args.publickey) > 1:
-        found = attackobj.attack_multiple_keys(args.publickey, attacks_list)
+    try:
+        if len(args.publickey) > 1:
+            found = attackobj.attack_multiple_keys(args.publickey, attacks_list)
+    except:
+        pass
 
     if not found:
         for publickey in args.publickey:
